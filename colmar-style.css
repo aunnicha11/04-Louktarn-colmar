@@ -70,6 +70,7 @@ body {
     padding-left: 24px;
     padding-right: 40px;
     display: flex;
+    width: 100%;
 }
 
 .hero-container img {
@@ -102,4 +103,27 @@ body {
     padding-bottom: 8px;
     background-color: #4e5053;
     color: white; 
+}
+
+.information-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 40px;
+    display: flex;
+    width: 100%;
+}
+
+.information-main-left img,
+.information-main-content {
+    width: 60%;
+}
+
+.information-main-content h2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.author-paragraph {
+    margin-top: 32px; /* Adjust the margin as needed */
 }
