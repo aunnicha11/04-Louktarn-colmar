@@ -9,12 +9,22 @@ html {
     width: 100%;
 }
 
+header {
+    display: flex;
+    padding-left: 24px;
+    padding-top: 5px;
+    text-align: center;
+    /* justify-content: flex-start; */
+    /* background-color: red; */
+}
+
 body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    display: flex;
+.colmar-logo-container {
+    padding-top: 20px;
+    /* background-color: yellow; */
 }
 
 .colmar-nav {
