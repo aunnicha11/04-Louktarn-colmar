@@ -44,9 +44,10 @@ body {
 
 .colmar-nav {
     height: 50px;
-    width: 100%;
+    width: 98%;
     position: fixed;
     display: flex;
+    padding-right: 24px;
     justify-content: flex-end;
     align-items: center;
 }
@@ -63,7 +64,7 @@ body {
     list-style: none;
 }
 
-.hero-container {
+.hero {
     background-color: lightgray;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -72,6 +73,9 @@ body {
     display: flex;
     width: 100%;
 }
+.hero-container {
+    display: flex;
+}
 
 .hero-container img {
     width: 60%;
@@ -79,12 +83,11 @@ body {
 
 .hero-content {
     padding-left: 24px;
-    padding-right: 18px;
+    padding-right: 60px;
     color: #4e5053;
-    width: 400px;
 }
 .hero-content h2 {
-    font-size: 28px;
+    font-size: 60px;
     padding-top: 50px;
     display: flex;
 }
@@ -98,32 +101,62 @@ body {
 }
 
 .hero-button {
-    width: 100%;
+    width: 88%;
     padding-top: 8px;
     padding-bottom: 8px;
     background-color: #4e5053;
     color: white; 
 }
 
-.information-container {
+.information {
+    display: flex;
+}
+
+.information-container{
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 24px;
     padding-right: 40px;
     display: flex;
-    width: 100%;
 }
 
-.information-main-left img,
-.information-main-content {
+.information-container img {
     width: 60%;
 }
 
-.information-main-content h2 {
+.information-main-left {
+    flex-direction: row; /* Added to stack the content vertically */
+    justify-content: left;
+}
+
+.information-main-left h2 {
     padding-top: 32px;
     padding-bottom: 24px;
 }
 
+/* .information-main-left {
+    width: 60%;
+    display: flex;
+    justify-content: left;
+} */
+
 .author-paragraph {
     margin-top: 32px; /* Adjust the margin as needed */
+}
+
+.information-small-container {
+    background-color: aqua;
+    width: 40%;
+}
+
+.info-orientation {
+    background-color: red;
+}
+
+.info-campus {
+    background-color: pink;
+}
+
+.info-lecture {
+    background-color: orange;
 }
