@@ -77,22 +77,27 @@ body {
     display: flex;
 }
 
-.hero-container img {
+.hero-image img {
     width: 60%;
 }
 
 .hero-content {
-    padding-left: 24px;
     padding-right: 60px;
+    padding-left: 24px;
     color: #4e5053;
 }
-.hero-content h2 {
-    font-size: 60px;
-    padding-top: 50px;
+
+.hero-content-right {
+    justify-content: right;
+}
+
+.hero-content-right h2 {
+    font-size: 45px;
+    padding-top: 50%;
     display: flex;
 }
 
-.hero-content p {
+.hero-content-right p {
     padding-top: 20px;
 }
 
@@ -108,9 +113,9 @@ body {
     color: white; 
 }
 
-.information {
+/* .information {
     display: flex;
-}
+} */
 
 .information-container{
     padding-top: 32px;
@@ -120,43 +125,55 @@ body {
     display: flex;
 }
 
-.information-container img {
-    width: 60%;
-}
-
-.information-main-left {
-    flex-direction: row; /* Added to stack the content vertically */
-    justify-content: left;
-}
-
 .information-main-left h2 {
     padding-top: 32px;
     padding-bottom: 24px;
 }
 
-/* .information-main-left {
-    width: 60%;
-    display: flex;
-    justify-content: left;
-} */
+.information-main-left {
+    padding-right: 24px;
+}
 
 .author-paragraph {
-    margin-top: 32px; /* Adjust the margin as needed */
+    margin-top: 32px;
 }
 
 .information-small-container {
-    background-color: aqua;
-    width: 40%;
+    /* background-color: aqua; */
+    /* width: 40%; */
+    border: 2px solid #c0c1c5;
+    padding-left: 16px;
+    display: block;
 }
 
-.info-orientation {
-    background-color: red;
+.info-orientation,
+.info-campus,
+.info-lecture {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.info-campus {
-    background-color: pink;
+.orientation-content,
+.campus-content,
+.lecture-content {
+    padding-left: 2px;
 }
+
+.orientation-content-right,
+.campus-content-right,
+.lecture-content-right {
+    justify-content: right;
+    padding-left: 16px;
+}
+
+/* .orientation-image img,
+.campus-image img,
+.lecture-image img {
+    width: 35%;
+    height: auto;
+} */
 
 .info-lecture {
-    background-color: orange;
+    background-color: #4e5053;
 }
